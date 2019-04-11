@@ -1,0 +1,208 @@
+body {margin:0; padding:0;  
+
+}
+main {
+    height: 100vh; 
+    background-image: url('images/jumbo-background.jpg');
+    background-size: cover; 
+    background-position: center; 
+
+}
+.head {
+    position: relative; 
+    /* z-index: 2000;  */
+}
+
+/* Animations */
+
+@keyframes startUp {
+    0% {
+        opacity: 0; 
+        transform: translateY(50px); 
+    }
+    100% {
+        opacity: 1; 
+        transform: translateY(0px); 
+    }
+}
+
+@keyframes socialIcon {
+    0% {
+        transfrom: translateY(0); 
+
+    }
+    50% {
+        transform: translateY(-20%); 
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.center {
+    text-align: center; 
+}
+/* Jumbotron */
+
+.jumbotron {
+   height: 100vh; 
+   display: block; 
+   background-size: cover; 
+   font-family: 'Raleway', sans-serif;
+   z-index: 2000; 
+    
+}
+.jumbotext__container {
+    width: 30%;
+    padding-top: 20%; 
+    margin-right: auto; 
+    margin-left: auto; 
+    color: white; 
+}
+.red {
+    color: rgb(230, 101, 101); 
+}
+.text-cont {
+    animation: startUp 1s ease-in; 
+    text-align: center; 
+    
+}
+
+.jumbo-title {
+    font-size: 3rem; 
+}
+.jumbo-button {
+    border: 1px solid white; 
+    width: 160px; 
+    padding: 7px; 
+    text-align: center; 
+    cursor: pointer; 
+    transition: rotate 0.5s;
+    font-size: 1.1rem; 
+    margin: auto; 
+    transition: all 0.5s; 
+}
+.fa-arrow-right {
+    transition: all 0.5s; 
+    margin-left: 10px; 
+}
+.jumbo-button:hover {
+    border: 1px solid #00e4f5; 
+    background-color: #00e4f5; 
+}
+.jumbo-button:hover .fa-arrow-right {
+    transform: rotate(90deg); 
+    
+}
+/* Navbar */
+
+.navbar {
+    display: flex; 
+    justify-content: start; 
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.734); 
+    padding-left: 100px;  
+    padding-top: 20px;
+    padding-bottom: 20px;  
+    
+}
+
+.nav_cont{
+    display: relative; 
+    position: fixed; 
+    
+    color: white; 
+    width: 100%; 
+}
+@media only screen and (min-width: 1201px) {
+    .nav_cont {
+        bottom: 0; 
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .nav_cont {
+        top: 0; 
+    }
+  }
+.nav-item{
+    margin-right: 15px; 
+    margin-left: 15px; 
+    cursor: pointer; 
+}
+.nav-link {
+    font-family: 'Ubuntu', sans-serif; 
+}
+.nav-link.active {
+    color: red; 
+}
+
+/* About Section */
+
+#about {
+    border-top: 4px solid #00e4f5; 
+    padding-top: 100px; 
+}
+.about-title {
+    text-align: center; 
+    border-bottom: 1px solid black; 
+    width: 100px; 
+    margin: auto; 
+}
+
+.flex {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin-right: 10%; 
+    margin-left: 10%; 
+}
+.flex-item {
+    margin: 10px; 
+    flex-basis: 300px; 
+}
+
+/* footer */
+
+footer {
+ 
+   
+    position: relative; 
+    bottom: 0; 
+}
+.wrapper {
+    padding-top: 60px;
+    padding-bottom: 40px; 
+}
+.social--cont {
+    display: flex; 
+    justify-content: center; 
+}
+.social_icon {
+    margin-left: 20px; 
+    color: white; 
+    margin-right: 20px; 
+    background-color: #42425d; 
+    padding: 12px; 
+    text-align: center; 
+    cursor: pointer; 
+    border: 3px solid #42425d;
+    transition: all 0.1s linear; 
+}
+.social_icon:hover {
+    background: #00e4f5; 
+    border: 3px solid rgb(38, 38, 49); 
+}
+.social_icon:hover .social__icon {
+    animation: socialIcon 200ms linear; 
+}
+.bottom-text {
+    color: rgb(105, 105, 105); 
+    margin-top: 30px; 
+    font-family: 'Heebo', sans-serif;
+    font-size: 0.8rem; 
+}
+.container {
+    height: 100%; 
+    background-color: rgb(38, 38, 49); 
+}
