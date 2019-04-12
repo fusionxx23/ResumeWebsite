@@ -3,7 +3,7 @@ body {margin:0; padding:0;
 }
 main {
     height: 100vh; 
-    background-image: url('images/jumbo-background.jpg');
+    background-image: url('images/jumbo-background-small.jpg');
     background-size: cover; 
     background-position: center; 
 
@@ -28,7 +28,7 @@ main {
 
 @keyframes socialIcon {
     0% {
-        transfrom: translateY(0); 
+        transform: translateY(0); 
 
     }
     50% {
@@ -39,6 +39,25 @@ main {
     }
 }
 
+@keyframes aboutTitle {
+    0% {
+        transform: translateX(-10%); 
+        opacity: 0; 
+    }
+    
+    100% {
+        transform: translateX(0);
+        opacity: 1; 
+    }
+}
+
+.about-title__animation {
+    animation: aboutTitle 1s; 
+}
+.unscrolled {
+    transform: translateX(-10%); 
+    opacity: 0; 
+}
 .center {
     text-align: center; 
 }
@@ -54,7 +73,7 @@ main {
 }
 .jumbotext__container {
     width: 30%;
-    padding-top: 20%; 
+    padding-top: 16%; 
     margin-right: auto; 
     margin-left: auto; 
     color: white; 
@@ -216,12 +235,12 @@ footer {
     padding: 12px; 
     text-align: center; 
     cursor: pointer; 
-    border: 3px solid #42425d;
+    
     transition: all 0.1s linear; 
 }
 .social_icon:hover {
     background: #00e4f5; 
-    border: 3px solid rgb(38, 38, 49); 
+    transform: scale(0.95); 
 }
 .social_icon:hover .social__icon {
     animation: socialIcon 350ms linear; 
