@@ -146,8 +146,12 @@ main {
 .about-title {
     text-align: center; 
     border-bottom: 1px solid black; 
-    width: 100px; 
+    margin-left: 20px; 
+    margin-right: 20px; 
     margin: auto; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.2rem; 
+    text-align: center; 
 }
 
 .flex {
@@ -160,14 +164,40 @@ main {
 .flex-item {
     margin: 10px; 
     flex-basis: 300px; 
+   font-family: 'Ubuntu', sans-serif; 
 }
+
+
+/* Work Section */
+#work {
+    background-color: rgb(241, 241, 241); 
+    padding-top: 30px; 
+    padding-bottom: 50px; 
+}
+
+.work-img {
+    height: 200px; 
+}
+.work__header {
+    font-size: 3.2rem; 
+    margin-bottom: 50px; 
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid black; 
+}
+.flex.work {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+.work.col {
+    
+}
+
+
 
 /* footer */
 
 footer {
- 
-   
-    position: relative; 
     bottom: 0; 
 }
 .wrapper {
@@ -194,7 +224,7 @@ footer {
     border: 3px solid rgb(38, 38, 49); 
 }
 .social_icon:hover .social__icon {
-    animation: socialIcon 200ms linear; 
+    animation: socialIcon 350ms linear; 
 }
 .bottom-text {
     color: rgb(105, 105, 105); 
@@ -202,7 +232,7 @@ footer {
     font-family: 'Heebo', sans-serif;
     font-size: 0.8rem; 
 }
-.container {
+.footer.container {
     height: 100%; 
     background-color: rgb(38, 38, 49); 
 }
