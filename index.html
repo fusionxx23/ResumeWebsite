@@ -15,19 +15,17 @@
 <body>
 
 <main>
-  <div class="head">
+  <div class="head" id='head'>
       <div class="jumbotron">
           <div class="jumbotext__container">
             <div class="text-cont">
               <p class='jumbo-title'>Hello, I'm <span class='red'>Travis Tarpley</span></p>
               <h2>Front-End Web Developer</h2>
-              <h3 class='jumbo-button'>View my Work <i class="fas fa-arrow-right"></i></h3>
+              <h3 class='jumbo-button'>View my Work<i class="fas fa-arrow-right"></i></h3>
             </div>
           </div>
         </div>
   </div>
-
-
 </main>
 
 
@@ -35,27 +33,29 @@
   <div class="nav_cont">
     <div class="navbar">
       <div class='nav-item active'>
-        <span class='nav-link red'>HOME</span>
+        <a href="#head" class='nav-link active'>HOME</a>
       </div>
 
       <div class='nav-item'>
-        <span class='nav-link'>ABOUT</span>
+        <a href="#about" class='nav-link inactive'>ABOUT</a>
       </div>
 
       <div class='nav-item'>
-        <span class='nav-link'>PORTFOLIO</span>
+        <a href='#work' class='nav-link inactive'>PORTFOLIO</a>
       </div>
 
+      <div class='nav-item'>
+        <a href='#contact' class='nav-link inactive'>CONTACT</a>
+      </div>
     </div>
   </div>
 </nav>
 
-<section id='about'>
+<div id='about'>
 
 <div class="header-title">
   <h1 class='about-title unscrolled' id='about-title'>About</h1>
 </div>
-
 <div class="flex">
   <div class="flex-item">
     <h1 class='center'>Fast</h1>
@@ -78,13 +78,10 @@
           earum odit dolorum quasi quis distinctio delectus sit necessitatibus fuga exercitationem, obcaecati in!</p>
   </div>
 </div>
-
-</section>
+</div>
 
 
 <section id='work'>
-
-
   <div class="work container">
     <div  class="header">
       <h1 class='center work__header'>PROJECTS</h1>
@@ -108,9 +105,28 @@
         </div>
     </div>
   </div>
-
-
 </section>
+
+<section id="contact">
+  <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+    <path d="M0 0 L50 100 L100 0 Z" fill="#f1f1f1" stroke="#f1f1f1"></path>
+  </svg>
+  <div class="container column ">
+    <div class="header center waypoint animated slide-in-left" data-animation="slide-in-left"><h1 class='contact-title'>Contact</h1></div>
+    <div class="header-bar" data-animation="slide-in-right" data-delay=".25s" style="animation-delay: 0.25s;"></div>
+    <div class="highlight center" data-animation="slide-in-right" data-delay=".5s" style="animation-delay: 0.5s;">Have a question or want to work together?</div>
+    <form class="waypoint center" data-animation="pop-in" data-delay=".5s" id="contact-form" style="animation-delay: 0.5s;">
+      <input placeholder="Name" type="text" name="name" required="">
+      <input placeholder="Enter email" type="email" name="email" required="">
+      <textarea placeholder="Your Message" type="text" name="message"></textarea>
+      <div id="success">
+        <div>Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span></div>
+      </div>
+      <input class="button" type="submit" id="submit" value="SUBMIT">
+    </form>
+  </div>
+</section>
+
 <footer>
 <div class="footer container">
   <div class="wrapper">
