@@ -133,10 +133,10 @@ main {
     
 }
 
+
 .nav_cont{
     display: relative; 
     position: fixed; 
-    
     color: white; 
     width: 100%; 
 }
@@ -144,11 +144,17 @@ main {
     .nav_cont {
         bottom: 0; 
     }
+   
 }
 
 @media only screen and (max-width: 1200px) {
     .nav_cont {
         top: 0; 
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .navbar {
+        padding-left: 20px; 
     }
   }
 .nav-item{
@@ -228,6 +234,7 @@ main {
 #contact {
     background-color: rgb(62, 62, 87); 
     padding-bottom: 40px; 
+    /* height: 100vh;  */
 }
 
 .contact-title {
@@ -246,14 +253,30 @@ main {
 input {
     display: block; 
     margin: auto; 
-    width: 30%; 
+    width: 60%; 
     color: white; 
     background-color: black; 
     border: none; 
+    height: 24px; 
+    margin-top: 2px; 
+    padding: 4px; 
+    font-family: 'Ubuntu', sans-serif; 
+    font-size: 0.8rem; 
+    border-radius: 5px; 
+    cursor: pointer; 
 }
 textarea {
     margin: auto; 
-    width:30%; 
+    width:60%; 
+    height: 70px; 
+    margin-top: 2px; 
+    padding: 4px; 
+    background-color: black; 
+    border: none; 
+    color: white; 
+    font-family: 'Ubuntu', sans-serif; 
+    font-size: 0.8rem; 
+    border-radius: 5px; 
 }
 form {
     margin-top: 10px; 
@@ -262,10 +285,15 @@ form {
     display: none;
 }
 input.button {
-    color: green; 
-    width: 10%; 
+    color: white; 
+    width: 100px; 
     margin-left: auto; 
-    margin-right: none; 
+    margin-right: none;    
+}
+.highlight {
+    font-family: 'Ubuntu', sans-serif; 
+    color: white; 
+    margin-bottom: 15px; 
 }
 
 /* footer */

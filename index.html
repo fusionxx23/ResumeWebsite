@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<main>
+<main id='home'>
   <div class="head" id='head'>
       <div class="jumbotron">
           <div class="jumbotext__container">
@@ -28,24 +28,23 @@
   </div>
 </main>
 
-
 <nav>
   <div class="nav_cont">
     <div class="navbar">
       <div class='nav-item active'>
-        <a href="#head" class='nav-link active'>HOME</a>
+        <a href="#head" id='home-nav' class='nav-link active'>HOME</a>
       </div>
 
       <div class='nav-item'>
-        <a href="#about" class='nav-link inactive'>ABOUT</a>
+        <a href="#about" id='about-nav' class='nav-link inactive'>ABOUT</a>
       </div>
 
       <div class='nav-item'>
-        <a href='#work' class='nav-link inactive'>PORTFOLIO</a>
+        <a href='#work' id='work-nav' class='nav-link inactive'>PORTFOLIO</a>
       </div>
 
       <div class='nav-item'>
-        <a href='#contact' class='nav-link inactive'>CONTACT</a>
+        <a href='#contact' id='contact-nav' class='nav-link inactive'>CONTACT</a>
       </div>
     </div>
   </div>
@@ -114,7 +113,7 @@
   <div class="container column ">
     <div class="header center waypoint animated slide-in-left" data-animation="slide-in-left"><h1 class='contact-title'>Contact</h1></div>
     <div class="header-bar" data-animation="slide-in-right" data-delay=".25s" style="animation-delay: 0.25s;"></div>
-    <div class="highlight center" data-animation="slide-in-right" data-delay=".5s" style="animation-delay: 0.5s;">Have a question or want to work together?</div>
+    <div class="highlight center " data-animation="slide-in-right" data-delay=".5s" style="animation-delay: 0.5s;">Have a question or want to work together?</div>
     <form class="waypoint center" data-animation="pop-in" data-delay=".5s" id="contact-form" style="animation-delay: 0.5s;">
       <input placeholder="Name" type="text" name="name" required="">
       <input placeholder="Enter email" type="email" name="email" required="">
