@@ -5,7 +5,7 @@ html {
 }
 main {
     height: 100vh; 
-    background-image: url('images/jumbo-background-small.jpg');
+    
     background-size: cover; 
     background-position: center; 
 
@@ -65,6 +65,10 @@ main {
 }
 /* Jumbotron */
 
+.a-jumbo-button {
+    text-decoration: none; 
+    color: white; 
+}
 .jumbotron {
    height: 100vh; 
    display: block; 
@@ -132,7 +136,7 @@ main {
     padding-bottom: 20px;  
     
 }
-
+/* https://medium.com/front-end-weekly/how-to-optimize-image-loading-on-your-website-855020fb41ae */
 
 .nav_cont{
     display: relative; 
@@ -250,6 +254,7 @@ main {
     margin-right: 20%;
     margin-left: 20%; 
 }
+
 input {
     display: block; 
     margin: auto; 
@@ -259,7 +264,7 @@ input {
     border: none; 
     height: 24px; 
     margin-top: 2px; 
-    padding: 4px; 
+    padding: 3px; 
     font-family: 'Ubuntu', sans-serif; 
     font-size: 0.8rem; 
     border-radius: 5px; 
@@ -277,6 +282,18 @@ textarea {
     font-family: 'Ubuntu', sans-serif; 
     font-size: 0.8rem; 
     border-radius: 5px; 
+}
+@media only screen and (max-width: 600px) {
+    .column {
+        margin-left: 2%; 
+        margin-right: 2%; 
+    }
+    input {
+        width: 80%; 
+    }
+    textarea {
+        width: 80%; 
+    }
 }
 form {
     margin-top: 10px; 

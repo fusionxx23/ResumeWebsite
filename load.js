@@ -10,7 +10,7 @@ class LoadUp {
         this.workContainer = $('#work'); 
         this.contactContainer = $('#contact'); 
         this.events(); 
-       
+        this.main = $('#main'); 
 
         this.homeNav = $('#home-nav'); 
         this.aboutNav = $('#about-nav'); 
@@ -22,8 +22,16 @@ class LoadUp {
     events() {
         this.window.scroll(() => {
 			this.scrollEvent(); 
-		}); 
+        }); 
+        $(document).ready( () =>{
+            this.imageLoadUp(); 
+          });
     }
+
+    imageLoadUp() {
+
+    }
+
     scrollEvent() {
         // About Animation Scroll
         if (!this.aboutCounter == 1) {
@@ -31,6 +39,7 @@ class LoadUp {
                 this.aboutTitle.addClass('about-title__animation'); 
                 this.aboutTitle.removeClass('unscrolled'); 
                 this.aboutCounter++; 
+               s
             }
         } 
 
@@ -92,6 +101,8 @@ class LoadUp {
             this.lastPosition = this.contactNav; 
         }
     }
+
+    
 }
 
 var load = new LoadUp(); 
