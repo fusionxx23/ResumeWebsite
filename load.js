@@ -1,5 +1,8 @@
 console.log("worked"); 
-
+$(window).ready(function() {
+    $('#home').addClass('main'); 
+    $('#head').addClass('loaded'); 
+})
 class LoadUp {
 
     constructor()  {

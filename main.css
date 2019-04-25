@@ -8,11 +8,18 @@ main {
     
     background-size: cover; 
     background-position: center; 
+}
 
+.main {
+    background-image: url("images/jumbo-background-small.png") !important;
 }
 .head {
     position: relative; 
+    
     /* z-index: 2000;  */
+}
+.loaded {
+    display: block!important; 
 }
 
 /* Animations */
