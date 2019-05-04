@@ -89,11 +89,11 @@ main {
 .navbar {
     display: flex; 
     justify-content: start; 
-    width: 100%; 
     background-color: rgba(0, 0, 0, 0.734); 
     padding-left: 100px;  
     padding-top: 20px;
     padding-bottom: 20px;  
+    
     
 }
 /* https://medium.com/front-end-weekly/how-to-optimize-image-loading-on-your-website-855020fb41ae */
@@ -110,7 +110,11 @@ main {
     }
    
 }
-
+.nav-item{
+    margin-right: 15px; 
+    margin-left: 15px; 
+    cursor: pointer; 
+}
 @media only screen and (max-width: 1200px) {
     .nav_cont {
         top: 0; 
@@ -118,14 +122,14 @@ main {
   }
   @media only screen and (max-width: 1000px) {
     .navbar {
-        padding-left: 20px; 
+        padding-left: 10px; 
+        padding-right: 10px; 
+        justify-content: space-around; 
+    }
+    .nav-item {
     }
   }
-.nav-item{
-    margin-right: 15px; 
-    margin-left: 15px; 
-    cursor: pointer; 
-}
+
 .nav-link {
     font-family: 'Ubuntu', sans-serif; 
     text-decoration: none; 
@@ -242,6 +246,9 @@ textarea {
     font-family: 'Ubuntu', sans-serif; 
     font-size: 0.8rem; 
     border-radius: 5px; 
+}
+.g-recaptcha {
+    display: inline-block;
 }
 @media only screen and (max-width: 600px) {
     .column {
