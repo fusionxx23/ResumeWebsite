@@ -1,3 +1,5 @@
+@import url('animations.css'); 
+
 body {margin:0; padding:0;  
 }
 html {
@@ -20,55 +22,6 @@ main {
 }
 .loaded {
     display: block!important; 
-}
-
-/* Animations */
-
-@keyframes startUp {
-    0% {
-        opacity: 0; 
-        transform: translateY(50px); 
-    }
-    100% {
-        opacity: 1; 
-        transform: translateY(0px); 
-    }
-}
-
-@keyframes socialIcon {
-    0% {
-        transform: translateY(0); 
-
-    }
-    50% {
-        transform: translateY(-20%); 
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes aboutTitle {
-    0% {
-        transform: translateX(-10%); 
-        opacity: 0; 
-    }
-    
-    100% {
-        transform: translateX(0);
-        opacity: 1; 
-    }
-}
-
-.about-title__animation {
-    animation: aboutTitle 1s; 
-}
-.unscrolled {
-    transform: translateX(-10%); 
-    opacity: 0; 
-}
-.center {
-    text-align: center; 
 }
 /* Jumbotron */
 

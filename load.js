@@ -8,6 +8,7 @@ class LoadUp {
     constructor()  {
         this.window = $(window); 
         this.aboutTitle = $("#about-title"); 
+     
         this.aboutCounter = 0; 
         this.aboutContainer = $('#about'); 
         this.workContainer = $('#work'); 
@@ -37,14 +38,7 @@ class LoadUp {
 
     scrollEvent() {
         // About Animation Scroll
-        if (!this.aboutCounter == 1) {
-            if(this.window.scrollTop() >= this.aboutContainer.position().top) {
-                this.aboutTitle.addClass('about-title__animation'); 
-                this.aboutTitle.removeClass('unscrolled'); 
-                this.aboutCounter++; 
-               s
-            }
-        } 
+       
 
         //Home Nav Scroll  
         if (this.window.scrollTop() < this.aboutContainer.position().top 

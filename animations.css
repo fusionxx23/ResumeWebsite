@@ -1,0 +1,68 @@
+/* Animations */
+
+@keyframes startUp {
+    0% {
+        opacity: 0; 
+        transform: translateY(50px); 
+    }
+    100% {
+        opacity: 1; 
+        transform: translateY(0px); 
+    }
+}
+
+@keyframes socialIcon {
+    0% {
+        transform: translateY(0); 
+
+    }
+    50% {
+        transform: translateY(-20%); 
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes aboutTitle {
+    0% {
+        transform: translateX(-10%); 
+        opacity: 0; 
+    }
+    
+    100% {
+        transform: translateX(0);
+        opacity: 1; 
+    }
+}
+@keyframes aboutBody {
+    0% {
+        transform: translateY(10%); 
+        opacity: 0; 
+    }
+    
+    100% {
+        transform: translateY(0);
+        opacity: 1; 
+    }
+}
+/* About Title Animation */
+.about-title__animation {
+    animation: aboutTitle 1s; 
+}
+.unscrolled_about_title {
+    transform: translateX(-10%); 
+    opacity: 0; 
+}
+.center {
+    text-align: center; 
+}
+
+/* About Section Body */
+.about-body__animation {
+    animation: aboutBody 1s; 
+}
+.unscrolled_about_body {
+    transform: translateY(-10%); 
+    opacity: 0; 
+}
