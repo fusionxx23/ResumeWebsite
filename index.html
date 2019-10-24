@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preload" href="images/small-resolution.png" as='image'>
     <link rel="preload" href="images/jumbo-background-small.png" as='image'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -111,9 +112,9 @@
 <section id='work'>
   <div class="work container">
     <div  class="header">
-      <h1 class='center work__header'>PROJECTS</h1>
+      <h1 class='center work__header unscrolled_about_title' id='work-title'>PROJECTS</h1>
     </div>
-    <div  class="flex work">
+    <div  class="flex work unscrolled_about_body" id='work-body'>
 
       <div id='work1' class="work col ">
         <img class='work-img' src="images/cupcake.png" alt=""> 
@@ -147,13 +148,14 @@
     <div class="header center waypoint animated slide-in-left" data-animation="slide-in-left"><h1 class='contact-title'>Contact</h1></div>
     <div class="header-bar" data-animation="slide-in-right" data-delay=".25s" style="animation-delay: 0.25s;"></div>
     <div class="highlight center " data-animation="slide-in-right" data-delay=".5s" style="animation-delay: 0.5s;">Have a question or want to work together?</div>
-    <form class="waypoint center" data-animation="pop-in" data-delay=".5s" id="contact-form" style="animation-delay: 0.5s;">
+    <form action="post" data-netlify='true' class="waypoint center" data-animation="pop-in" data-delay=".5s" id="contact-form" style="animation-delay: 0.5s;">
       <input placeholder="Name" type="text" name="name" required="">
       <input placeholder="Enter email" type="email" name="email" required="">
       <textarea placeholder="Your Message" type="text" name="message"></textarea>
       <div id="success">
         <div>Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span></div>
       </div>
+      <div class='captcha' data-netlify-recaptcha='true'></div>
       <input class="button" type="submit" id="submit" value="SUBMIT">
     </form>
   </div>
