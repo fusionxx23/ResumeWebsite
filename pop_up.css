@@ -47,7 +47,6 @@
     display: flex; 
     flex-wrap: wrap;
     justify-content: left;
-
     
 }
 .about .lang-emblems span {
@@ -61,9 +60,48 @@
 .about .about-section    {
     margin-top: auto; 
     text-align: left;
-    padding: 20px; 
+    padding-left: 15px; 
+    padding-right: 10px; 
     color: rgb(184, 183, 183); 
+    font-family: 'Source Code Pro', monospace;
 }
-.about .about-section h3 {
-   
+.about .about-section p {
+    height: 260px; 
+    margin-right: 4px; 
+}
+.about .about-section .scroll {
+   height: 260px; 
+   overflow-y: scroll; 
+}
+.about .buttons {
+    margin-top: 10px; 
+    padding-left: 20px; 
+    text-align: left;
+}
+
+.force-overflow {
+    margin-right: 5px; 
+}
+
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+    background-color: rgb(128, 128, 128);
+    margin-right: 5px; 
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 12px;
+    background-color: rgb(66, 68, 75); 
+    margin-right: 5px; 
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+    margin-right: 5px; 
 }
