@@ -13,14 +13,30 @@
     display: flex; 
     z-index: 90; 
     height: 100%; 
-   
+}
+.all {
+    /* opacity: 0.4;  */
+}
+.x {
+    position: absolute; 
+    right: 0; 
+    top: 0; 
+    padding: 10px; 
+    z-index: 1000; 
+    font-size: 2rem; 
+    color: white; 
 }
 .pop-up .flex .dis {
    flex-basis: 65%;
    background-color: blue; 
    width: 750px;  
    z-index: 100; 
-   height: 100%;
+   height: 100;
+   padding: 0px; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden
 }
 .pop-up .flex .about {
     width: 350px;  
@@ -31,7 +47,7 @@
 
 }
 .pop-up img {
-    width: 750px; 
+   height: 460px;  
 }
 .pop-up .flex .about {
     text-align: center; 

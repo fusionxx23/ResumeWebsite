@@ -1,7 +1,9 @@
 @import url('animations.css'); 
 @import url('pop_up.css'); 
 body {margin:0; padding:0;  
+    /* background-color: black;  */
 }
+
 html {
     scroll-behavior: smooth; 
 }
@@ -11,7 +13,9 @@ main {
     background-size: cover; 
     background-position: center; 
 }
-
+.all {
+    /* background-color: black;  */
+}
 .main {
     background-image: url("images/jumbo-background-small.png") !important;
 }
